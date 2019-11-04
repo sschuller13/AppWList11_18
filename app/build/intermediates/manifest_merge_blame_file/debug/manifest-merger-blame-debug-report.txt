@@ -1,0 +1,216 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.myapplication"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="14"
+8-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:7:5-79
+12-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:8:5-76
+13-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:8:22-73
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:10:5-65
+14-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:10:22-62
+15    <uses-permission android:name="android.hardware.camera" />
+15-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:11:5-63
+15-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:11:22-60
+16    <uses-permission android:name="android.hardware.camera.autofocus" />
+16-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:12:5-73
+16-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:12:22-70
+17
+18    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+19    <uses-feature
+19-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:24:5-26:36
+20        android:name="android.hardware.camera"
+20-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:25:9-47
+21        android:required="false" />
+21-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:26:9-33
+22    <uses-feature
+22-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:27:5-29:36
+23        android:name="android.hardware.camera.front"
+23-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:28:9-53
+24        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+24-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:29:9-33
+25    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+26    <uses-feature
+26-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:32:5-34:36
+27        android:name="android.hardware.camera.autofocus"
+27-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:33:9-57
+28        android:required="false" />
+28-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:34:9-33
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:35:5-37:36
+30        android:name="android.hardware.camera.flash"
+30-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:36:9-53
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:37:9-33
+32    <uses-feature
+32-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:38:5-40:36
+33        android:name="android.hardware.screen.landscape"
+33-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:39:9-57
+34        android:required="false" />
+34-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:40:9-33
+35    <uses-feature
+35-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:41:5-43:36
+36        android:name="android.hardware.wifi"
+36-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:42:9-45
+37        android:required="false" />
+37-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:43:9-33
+38
+39    <application
+39-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:15:5-76:19
+40        android:allowBackup="true"
+40-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:16:9-35
+41        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+41-->[com.android.support:support-compat:28.0.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+42        android:debuggable="true"
+43        android:label="@string/app_name"
+43-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:17:9-41
+44        android:supportsRtl="true"
+44-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:18:9-35
+45        android:theme="@style/AppTheme" >
+45-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:19:9-40
+46        <activity
+46-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:21:9-24:68
+47            android:name="com.example.myapplication.Inventory_List"
+47-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:22:13-43
+48            android:label="@string/title_activity_inventory__list"
+48-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:23:13-67
+49            android:theme="@style/AppTheme.NoActionBar" />
+49-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:24:13-56
+50        <activity
+50-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:25:9-33:20
+51            android:name="com.example.myapplication.add_inventory"
+51-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:26:13-42
+52            android:label="@string/title_activity_add_inventory"
+52-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:27:13-65
+53            android:parentActivityName="com.example.myapplication.AddInventory"
+53-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:28:13-55
+54            android:theme="@style/AppTheme.NoActionBar" >
+54-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:29:13-56
+55            <meta-data
+55-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:30:13-32:74
+56                android:name="android.support.PARENT_ACTIVITY"
+56-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:31:17-63
+57                android:value="com.example.myapplication.AddInventory" />
+57-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:32:17-71
+58        </activity>
+59        <activity android:name="com.example.myapplication.editaccount" />
+59-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:34:9-49
+59-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:34:19-46
+60        <activity android:name="com.example.myapplication.Main_Signup" />
+60-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:35:9-49
+60-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:35:19-46
+61        <activity android:name="com.example.myapplication.reports" />
+61-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:36:9-45
+61-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:36:19-42
+62        <activity android:name="com.example.myapplication.managephysicalcount" />
+62-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:37:9-57
+62-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:37:19-54
+63        <activity android:name="com.example.myapplication.managesysteminventory" />
+63-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:38:9-59
+63-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:38:19-56
+64        <activity android:name="com.example.myapplication.manageusers" />
+64-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:39:9-49
+64-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:39:19-46
+65        <activity android:name="com.example.myapplication.Managecompany" />
+65-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:40:9-51
+65-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:40:19-48
+66        <activity
+66-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:41:9-44:59
+67            android:name="com.example.myapplication.signupcompany"
+67-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:42:13-42
+68            android:label="@string/title_activity_signupcompany"
+68-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:43:13-65
+69            android:theme="@style/AppTheme.NoActionBar" />
+69-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:44:13-56
+70        <activity
+70-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:45:9-48:59
+71            android:name="com.example.myapplication.userpanel"
+71-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:46:13-38
+72            android:label="@string/title_activity_userpanel"
+72-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:47:13-61
+73            android:theme="@style/AppTheme.NoActionBar" />
+73-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:48:13-56
+74        <activity
+74-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:49:9-52:59
+75            android:name="com.example.myapplication.adminpanel"
+75-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:50:13-39
+76            android:label="@string/title_activity_adminpanel"
+76-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:51:13-62
+77            android:theme="@style/AppTheme.NoActionBar" />
+77-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:52:13-56
+78        <activity
+78-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:53:9-56:59
+79            android:name="com.example.myapplication.ownerpanel"
+79-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:54:13-39
+80            android:label="@string/title_activity_ownerpanel"
+80-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:55:13-62
+81            android:theme="@style/AppTheme.NoActionBar" />
+81-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:56:13-56
+82        <activity
+82-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:57:9-60:59
+83            android:name="com.example.myapplication.personal_infoActivity"
+83-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:58:13-50
+84            android:label="@string/title_activity_personal_info"
+84-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:59:13-65
+85            android:theme="@style/AppTheme.NoActionBar" />
+85-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:60:13-56
+86        <activity
+86-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:61:9-64:59
+87            android:name="com.example.myapplication.signupActivity"
+87-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:62:13-43
+88            android:label="@string/title_activity_signup"
+88-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:63:13-58
+89            android:theme="@style/AppTheme.NoActionBar" />
+89-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:64:13-56
+90        <activity android:name="com.example.myapplication.manage_inventory" >
+90-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:65:9-71:20
+90-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:65:19-51
+91            <intent-filter>
+91-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:66:13-70:29
+92                <action android:name="android.intent.action.MAIN" />
+92-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:67:17-69
+92-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:67:25-66
+93
+94                <category android:name="android.intent.category.LAUNCHER" />
+94-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:69:17-77
+94-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:69:27-74
+95            </intent-filter>
+96        </activity>
+97        <activity
+97-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:72:9-75:47
+98            android:name="com.example.myapplication.login.Login"
+98-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:73:13-40
+99            android:label="@string/title_activity_login"
+99-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:74:13-57
+100            android:theme="@style/AppTheme" />
+100-->C:\Users\s_sch\Desktop\Botscale\My Application\app\src\main\AndroidManifest.xml:75:13-44
+101        <activity
+101-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:46:9-52:63
+102            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+102-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:47:13-74
+103            android:clearTaskOnLaunch="true"
+103-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:48:13-45
+104            android:screenOrientation="sensorLandscape"
+104-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:49:13-56
+105            android:stateNotNeeded="true"
+105-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:50:13-42
+106            android:theme="@style/zxing_CaptureTheme"
+106-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:51:13-54
+107            android:windowSoftInputMode="stateAlwaysHidden" />
+107-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\s_sch\.gradle\caches\transforms-2\files-2.1\70bb90ace6f61a544d13effc86b9b773\zxing-android-embedded-3.2.0\AndroidManifest.xml:52:13-60
+108    </application>
+109
+110</manifest>
